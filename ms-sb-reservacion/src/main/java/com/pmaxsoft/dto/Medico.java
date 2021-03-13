@@ -9,7 +9,7 @@ public class Medico {
 
 	private int mediId;
 	
-	private boolean medi_vigente;
+	private boolean mediVigente;
 	
 	private String mediNombre;
 	

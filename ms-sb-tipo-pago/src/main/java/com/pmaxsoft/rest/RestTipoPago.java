@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.pmaxsoft.dto.TipoPago;
 
 import com.pmaxsoft.repositorios.RepositorioTipoPago;
@@ -28,6 +27,11 @@ public class RestTipoPago {
 		return (List<TipoPago>) repositorioTipoPago.findAll();
 	}
 
+	@GetMapping("/tipos-pago-vigentes")
+	public List<TipoPago> listarVigentes() {
+		return (List<TipoPago>) repositorioTipoPago.findByTipaVigenteTrue();
+	}
+
 	@GetMapping("/{id}")
 	public TipoPago buscar(@PathVariable int id) {
 		Optional<TipoPago> entidad = repositorioTipoPago.findById(id);
@@ -36,7 +40,7 @@ public class RestTipoPago {
 		}
 		return null;
 	}
-	
+
 	@PostMapping("/insertar")
 	public void insertar(@RequestBody TipoPago entidad) {
 		repositorioTipoPago.save(entidad);

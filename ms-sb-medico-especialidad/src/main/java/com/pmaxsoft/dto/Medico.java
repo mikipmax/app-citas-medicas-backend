@@ -19,7 +19,7 @@ public class Medico {
 	@Column(name = "medi_id")
 	private int mediId;
 	@Column(name = "medi_vigente")
-	private boolean medi_vigente;
+	private boolean mediVigente;
 	@Column(name = "medi_nombre")
 	private String mediNombre;
 	@Column(name = "medi_apellido")

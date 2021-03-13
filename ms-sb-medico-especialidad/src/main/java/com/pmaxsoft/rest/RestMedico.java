@@ -16,9 +16,6 @@ import com.pmaxsoft.repositorios.RepositorioMedico;
 
 @RestController
 public class RestMedico {
-	
-
-	
 
 	@Autowired
 	private RepositorioMedico repositorioEspecialidad;
@@ -27,6 +24,11 @@ public class RestMedico {
 	public List<Medico> listar() {
 
 		return (List<Medico>) repositorioEspecialidad.findAll();
+	}
+
+	@GetMapping("/medicos-vigentes")
+	public List<Medico> listarVigentes() {
+		return (List<Medico>) repositorioEspecialidad.findByMediVigenteTrue();
 	}
 
 	@GetMapping("/medico/{id}")

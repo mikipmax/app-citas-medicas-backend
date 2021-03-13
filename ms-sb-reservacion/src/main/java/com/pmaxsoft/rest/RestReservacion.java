@@ -123,8 +123,8 @@ public class RestReservacion {
 		repositorioEspecialidad.save(entidad);
 	}
 
-	@DeleteMapping("/eliminar")
-	public void eliminar(@RequestBody Reservacion entidad) {
-		repositorioEspecialidad.delete(entidad);
+	@DeleteMapping("/eliminar/{id}")
+	public void eliminar(@PathVariable int id) {
+		repositorioEspecialidad.delete(new Reservacion(id));
 	}
 }

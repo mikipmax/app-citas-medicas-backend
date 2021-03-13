@@ -10,11 +10,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
-
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Reservacion {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,5 +43,10 @@ public class Reservacion {
 	private Medico medico;
 	@Transient
 	private EstadoReserva estadoReserva;
-	
+
+	public Reservacion(int reseId) {
+
+		this.reseId = reseId;
+	}
+
 }

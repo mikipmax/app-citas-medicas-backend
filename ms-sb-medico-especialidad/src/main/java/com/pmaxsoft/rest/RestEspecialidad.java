@@ -27,6 +27,10 @@ public class RestEspecialidad {
 	public List<Especialidad> listar() {
 		return (List<Especialidad>) repositorioEspecialidad.findAll();
 	}
+	@GetMapping("/especialidades-vigentes")
+	public List<Especialidad> listarVigentes() {
+		return (List<Especialidad>) repositorioEspecialidad.findByEspeVigenteTrue();
+	}
 
 	@GetMapping("/especialidad/{id}")
 	public Especialidad buscar(@PathVariable int id) {

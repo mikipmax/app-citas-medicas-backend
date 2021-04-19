@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/pmaxsoft/MsSbApplication.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/TipoPago.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/repositorios/RepositorioTipoPago.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/rest/RestTipoPago.java=UTF-8

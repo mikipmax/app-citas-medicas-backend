@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/pmaxsoft/MsSbApplication.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Especialidad.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/EstadoReserva.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Medico.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Paciente.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Reservacion.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/TipoPago.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/repositorios/RepositorioReservacion.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/rest/RestReservacion.java=UTF-8

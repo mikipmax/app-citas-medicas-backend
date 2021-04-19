@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/pmaxsoft/MsSbApplication.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Especialidad.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/dto/Medico.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/repositorios/RepositorioEspecialidad.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/repositorios/RepositorioMedico.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/rest/RestEspecialidad.java=UTF-8
+encoding//src/main/java/com/pmaxsoft/rest/RestMedico.java=UTF-8
